@@ -11,5 +11,5 @@ This repository contains the materials for the Workshop "Phonetic Data Processin
 - Creation of a dictionary using g2p models
 - Preparation of a custom corpus using Audacity and custom Python scripts
 - Training of a new acoustic model
-Session 3 (14/04/2022, tbd): 
+### Session 3 (14/04/2022, tbd): 
 - EMA data processing
