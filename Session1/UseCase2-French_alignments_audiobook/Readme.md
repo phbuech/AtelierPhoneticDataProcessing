@@ -1,0 +1,2 @@
+# Use Case 2: alignment of a French audiobook
+In this tutorial we will align utterances from an audiobook. As an example, we will align some sentences from the LibriVox audiobook of "Le dernier jour d'un condamné" of Victor Hugo. The audiobook can be found [here](https://librivox.org/le-dernier-jour-by-victor-hugo/) and the corresponding text [here](https://fr.wikisource.org/wiki/Le_Dernier_Jour_d%E2%80%99un_Condamn%C3%A9/01). The files folder contains an excerpt of the data including audio and transcriptions, as well as the TextGrid output of the alignment process.
