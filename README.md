@@ -7,6 +7,9 @@ This repository contains the materials for the Workshop "Phonetic Data Processin
 - demonstration of the Montreal Forced Aligner
 - alignment of French data
 #### Session 2 (24/03/2022, ENS Salle Paul Langevin):
-- 
+- adapt acoustic model
+- Creation of a dictionary using g2p models
+- Preparation of a custom corpus using Audacity and custom Python scripts
+- Training of a new acoustic model
 Session 3 (14/04/2022, tbd): 
 - EMA data processing
