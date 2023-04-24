@@ -1,0 +1,33 @@
+{
+"channels":{
+            "LE":1,
+            "RE":2,
+            "TDOR":3,
+            "TMID":4,
+            "TTIP":5,
+            "ULIP":6,
+            "LLIP":7
+            },
+"LA": ["ULIP","LLIP"],
+"tier":2,
+"targets": {
+            "d": {"channel":"TTIP_y",
+                  "method": "vel20_windowed"
+                },
+            "t" : {"channel":"TTIP",
+                    "method": "tvel20_windowed"
+                },
+            "d_?": {"channel":"TTIP",
+                    "method": "tvel20_windowed"
+                },
+            "b": {"channel": "LA",
+                    "method": "vel20"
+                }
+            },
+"padding":0.15,
+"input_path": "/home/philipp/Workspace/data/sentences/",
+"output_path": "/home/philipp/Workspace/TextGrid_output/",
+"signal_filter": {
+    "butter" : [25,5]
+    }
+}
