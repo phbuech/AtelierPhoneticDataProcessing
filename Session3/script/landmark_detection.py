@@ -634,7 +634,7 @@ def create_annotation(time_ema,annotation,landmark_df,extracted_ema_data,segment
         tvel = tangential_velocity(extracted_ema_data,param["channel"],ema_fs)[tmin_ema_idx:tmax_ema_idx]
         wfun = window_function(time_subset, tmin_pad, tmin-0.025, tmax+0.025, tmax_pad)
         landmarks = detect_landmarks_tvel20_windowed(time_subset,tvel,wfun,tmid_ema_idx)
-        
+        """
         fig, ax = plt.subplots(4,1,figsize=(10,10))
         ax[0].plot(time_subset,extracted_ema_data[param["channel"]+"_y"][tmin_ema_idx:tmax_ema_idx])
         ax[1].plot(time_subset,tvel)
@@ -647,7 +647,7 @@ def create_annotation(time_ema,annotation,landmark_df,extracted_ema_data,segment
         ax[0].scatter(time_subset[landmarks["pvel_fro"]],extracted_ema_data[param["channel"]+"_y"][tmin_ema_idx:tmax_ema_idx][landmarks["pvel_fro"]])
         ax[0].scatter(time_subset[landmarks["offset"]],extracted_ema_data[param["channel"]+"_y"][tmin_ema_idx:tmax_ema_idx][landmarks["offset"]])
         ax[0].set_title(label)
-        
+        """
         landmark_df.loc[len(landmark_df)] = [0,"TextTier",label,0,time_subset[landmarks["onset"]],time_subset[landmarks["onset"]],label+"_ONS"]
         landmark_df.loc[len(landmark_df)] = [0,"TextTier",label,0,time_subset[landmarks["pvel_to"]],time_subset[landmarks["pvel_to"]],label+"_pVelTo"]
         landmark_df.loc[len(landmark_df)] = [0,"TextTier",label,0,time_subset[landmarks["target"]],time_subset[landmarks["target"]],label+"_TAR"]
